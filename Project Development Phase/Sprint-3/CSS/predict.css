@@ -1,0 +1,99 @@
+body {
+    background-color: aquamarine;
+}
+
+img{
+    border-radius: 50%;
+    width: 700;
+    height: 450;
+}
+
+.navbar{
+    background-color: #393838;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.navbar ul{
+    margin-right: 10%;
+}
+
+.navbar ul li{
+    display: inline;
+    margin: 0px 20px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    color: aquamarine;
+    transition: 0.2s ease;
+}
+
+.content{
+    margin-top: 30px;
+    display: flex;
+}
+
+.prediction{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prediction .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prediction .form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.prediction .form form .form-row label{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.prediction .form form .form-row select{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    background-color: bisque;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.prediction .form form .form-row #input{
+    margin-bottom: 40px;
+}
+
+.prediction .form form .button-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.prediction .form form .button-row #button{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: coral;
+}

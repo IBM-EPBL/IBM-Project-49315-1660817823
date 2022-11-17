@@ -1,0 +1,66 @@
+<html>
+<title>Plant Disease Prediction</title>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/register.css')}}" />
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Plant Disease Prediction</h1>
+        <ul>
+            <li><a href="./home">Home</a></li>
+            <li><a href="./login">Login</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="inputs">
+            <h2>Please Fill the follwing Details !!</h2>
+            <form action="/register" method="POST">
+                <div class="wrapper">
+                    <div class="input">
+                        <input required type="text" name="username" />
+                        <div class="underline"></div>
+                        <label>Username</label>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="input">
+                        <input required type="number" name="username" />
+                        <div class="underline"></div>
+                        <label>Mobile No</label>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="input">
+                        <input required type="email" name="username" />
+                        <div class="underline"></div>
+                        <label>E-mail</label>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="input">
+                        <input required type="password" name="password" />
+                        <div class="underline"></div>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="input">
+                        <input required type="password" name="password" />
+                        <div class="underline"></div>
+                        <label>Confirm Password</label>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="button">
+                        <input type="submit" value="Register" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <img src="{{url_for('static',filename='images/home.jpg')}}" alt="image" />
+    </div>
+</body>
+
+</html>

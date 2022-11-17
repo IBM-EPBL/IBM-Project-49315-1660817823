@@ -1,0 +1,27 @@
+<html>
+<title>Plant Disease Prediction</title>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/result.css')}}" />
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Plant Disease Prediction</h1>
+        <ul>
+            <li><a href="./home">Home</a></li>
+            <li><a href="./predict">Predict</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="description">
+            <h1>Prediction :</h1>
+            <p>
+                <span></span>{{msg}}
+            </p>
+        </div>
+        <img src="{{url_for('static',filename='images/home.jpg')}}" alt="image" />
+    </div>
+</body>
+
+</html>
