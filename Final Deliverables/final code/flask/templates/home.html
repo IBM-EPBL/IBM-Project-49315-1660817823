@@ -1,0 +1,36 @@
+<html>
+<title>Plant Disease Prediction</title>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}" />
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Plant Disease Prediction</h1>
+        <ul>
+            <li><a href="./predict">Predict</a></li>
+            <li><a href="./login">Log Out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="description">
+            <h1>Detect if your plant is infected!!</h1>
+            <p>
+                <span>Agriculture</span> is one of the major sectors world wide.over the years it has developed and the
+                use of new
+                technologies and equipment replaced almost all the traditional methods of farming.the plant diseases
+                effect
+                the production.identification of diseases and talking necessary precautions is all done through naked
+                eye,which requires labour and laboratries.this application helps farmers in detecting the diseases by
+                observing the spots on the leaves,which in turn saves effort and labour costs.
+            </p>
+            <div class="button">
+                <a href="./predict">Predict Image</a>
+            </div>
+        </div>
+        <img src="{{url_for('static',filename='images/home.jpg')}}" alt="image" />
+    </div>
+</body>
+
+</html>

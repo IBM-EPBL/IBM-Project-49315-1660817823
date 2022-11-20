@@ -1,0 +1,43 @@
+<html>
+<title>Plant Disease Prediction</title>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/predict.css')}}" />
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Plant Disease Prediction</h1>
+        <ul>
+            <li><a href="./home">Home</a></li>
+            <li><a href="./login">Log out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="prediction">
+            <div class="form">
+                <h1>Drop the Images to Get the Prediction</h1>
+                <form action="/prediction" method="POST" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <label for="plant">Select the Type of Plant :</label>
+                        <select name="plant">
+                            <option value="fruit">Fruit</option>
+                            <option value="vegetable">Vegetable</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="plant">Select the Image of Plant :</label>
+                        <input id="input" type="file" name="image" />
+                    </div>
+                    <div class="button-row">
+                        <input id="button" type="submit" value="Predict" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <img src="{{url_for('static',filename='images/predict.jpg')}}" alt="image" />
+    </div>
+</body>
+
+</html>
